@@ -1,18 +1,14 @@
 {
-  "name": "24684-truffle-and-node-js",
+  "name": "test_rpc",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "truffle-contract": "^2.0.5",
-    "web3": "0.19.0"
+    "web3": "github:ethereum/web3.js"
   }
 }
