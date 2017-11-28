@@ -123,17 +123,77 @@
   		              <h4 class="title">Your requests</h4>
                     <p class="category">Control who has access to your digital identity</p>
                   </div>
-                  <table class="table table-hover table-responsive">
-                    <thead class="text-xs-center">
-                        <th style="width:15vw !important"><strong>Participant ID</strong></th>
-                        <th style="width:20vw !important"><strong>Organization</strong></th>
-                        <th style="width:20vw !important"><strong>Description</strong></th>
-                        <th style="width:25vw !important"><strong>Action</strong></th>
-                        <th style="width:20vw !important"><strong>Status</strong></th>
-                    </thead>
-                  </table>
-                  <br/>
-                  <p class="text-center"><em><strong>Nothing here yet</strong></em></p>
+                      <table class="table table-hover table-responsive">
+                        <thead class="text-xs-center">
+                            <th style="width:15vw !important"><strong>Participant ID</strong></th>
+                            <th style="width:20vw !important"><strong>Organization</strong></th>
+                            <th style="width:20vw !important"><strong>Description</strong></th>
+                            <th style="width:25vw !important"><strong>Action</strong></th>
+                            <th style="width:20vw !important"><strong>Status</strong></th>
+                        </thead>
+                        <tbody>
+                          <tr>
+                              <td>13</td>
+                              <td>Costi</td>
+                              <td>Canada's largets refugee crisis organization</td>
+                              <td>
+                                <div class="togglebutton">
+                                  <label>
+                                      Locked &nbsp; &nbsp; <input type="checkbox" checked > Unlocked
+                                  </label>
+                                </div>
+                              </td>
+                              <td>
+                                <a class="btn btn-small btn-simple" data-toggle="modal" data-target="#smallAlertModal1">Confirmed</a>
+                              </td>
+                            </tr>
+                            <tr>
+                                <td>284</td>
+                                <td>Scotiabank</td>
+                                <td>One of Canada's big banks</td>
+                                <td>
+                                  <div class="togglebutton">
+                                    <label>
+                                        Locked &nbsp; &nbsp; <input type="checkbox" > Unlocked
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>
+                                  <a class="btn btn-small btn-simple" data-toggle="modal" data-target="#smallAlertModal2">Are you sure?</a>
+                                </td>
+                              </tr>
+                              <tr>
+                                  <td>17</td>
+                                  <td>Health Ontario</td>
+                                  <td>Government of Ontario for regullating Canadian health and well-being</td>
+                                  <td>
+                                    <div class="togglebutton">
+                                      <label>
+                                          Locked &nbsp; &nbsp; <input type="checkbox" > Unlocked
+                                      </label>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <a class="btn btn-small btn-simple" data-toggle="modal" data-target="#smallAlertModal3">Are you sure?</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>41</td>
+                                    <td>United Nations</td>
+                                    <td>World organization helping people</td>
+                                    <td>
+                                      <div class="togglebutton">
+                                        <label>
+                                            Locked &nbsp; &nbsp; <input type="checkbox" > Unlocked
+                                        </label>
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <a class="btn btn-small btn-simple" data-toggle="modal" data-target="#smallAlertModal4">Are you sure?</a>
+                                    </td>
+                                  </tr>
+                        </tbody>
+                      </table>
                   <a class="btn btn-simple" style="color:white" onclick="demo.showNotification('top','right')">notification</a>
                   <h4 class="title">Categories</h4>
                   <p class="category">Let's get you on track. Select a category to explore.</p>
@@ -237,7 +297,148 @@
 
 
 
+                      <!-- small modal -->
+                      <div class="modal fade" id="smallAlertModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-small ">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="material-icons">clear</i></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <h5 class="">One last step! Confirm the organization and your private key</h5>
+                                      <p class="">To confirm please enter your private key</p>
 
+                                      <h2 id="instructor"></h2>
+
+
+                                      <div class="form-group label-floating">
+                                          <label for="name" class="control-label">Re-enter  organization name</label>
+                                          <input id="name" type="text" class="form-control">
+                                      </div>
+
+                                      <div class="form-group label-floating">
+                                          <label  for="name" class="control-label">Your private key</label>
+                                          <input id="age" type="password" class="form-control">
+                                      </div>
+
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-simple" data-dismiss="modal">Never mind</button>
+                                      <button type="button" id="button" class="btn btn-success btn-simple" data-dismiss="modal">Let's do this!</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!--    end small modal -->
+
+
+                      <!-- small modal -->
+                      <div class="modal fade" id="smallAlertModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-small ">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="material-icons">clear</i></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <h5 class="">One last step! Confirm the organization and your private key</h5>
+                                      <p class="">To confirm please enter your private key</p>
+
+                                      <h2 id="instructor"></h2>
+
+
+                                      <div class="form-group label-floating">
+                                          <label for="name" class="control-label">Re-enter organization name</label>
+                                          <input id="name" type="text" class="form-control">
+                                      </div>
+
+                                      <div class="form-group label-floating">
+                                          <label  for="name" class="control-label">Your private key</label>
+                                          <input id="age" type="password" class="form-control">
+                                      </div>
+
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-simple" data-dismiss="modal">Never mind</button>
+                                      <button type="button" id="button" class="btn btn-success btn-simple" data-dismiss="modal">Let's do this!</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!--    end small modal -->
+
+
+
+
+                      <!-- small modal -->
+                      <div class="modal fade" id="smallAlertModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-small ">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="material-icons">clear</i></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <h5 class="">One last step! Confirm the organization and your private key</h5>
+                                      <p class="">To confirm please enter your private key</p>
+
+                                      <h2 id="instructor"></h2>
+
+
+                                      <div class="form-group label-floating">
+                                          <label for="name" class="control-label">Re-enter organization name</label>
+                                          <input id="name" type="text" class="form-control">
+                                      </div>
+
+                                      <div class="form-group label-floating">
+                                          <label  for="name" class="control-label">Your private key</label>
+                                          <input id="age" type="password" class="form-control">
+                                      </div>
+
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-simple" data-dismiss="modal">Never mind</button>
+                                      <button type="button" id="button" class="btn btn-success btn-simple" data-dismiss="modal">Let's do this!</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!--    end small modal -->
+
+
+
+
+                      <!-- small modal -->
+                      <div class="modal fade" id="smallAlertModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-small ">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="material-icons">clear</i></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <h5 class="">One last step! Confirm the organization and your private key</h5>
+                                      <p class="">To confirm please enter your private key</p>
+
+                                      <h2 id="instructor"></h2>
+
+
+                                      <div class="form-group label-floating">
+                                          <label for="name" class="control-label">Re-enter organization name</label>
+                                          <input id="name" type="text" class="form-control">
+                                      </div>
+
+                                      <div class="form-group label-floating">
+                                          <label  for="name" class="control-label">Your private key</label>
+                                          <input id="age" type="password" class="form-control">
+                                      </div>
+
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-simple" data-dismiss="modal">Never mind</button>
+                                      <button type="button" id="button" class="btn btn-success btn-simple" href="index1.html">Let's do this!</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!--    end small modal -->
 
 
 
